@@ -1,0 +1,157 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%     Declarations (skip to Begin Document, line 88, for parts you fill in)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt]{article}
+
+\usepackage{geometry}  % Lots of layout options.  See http://en.wikibooks.org/wiki/LaTeX/Page_Layout
+\geometry{letterpaper}  % ... or a4paper or a5paper or ... 
+\usepackage{fullpage}  % somewhat standardized smaller margins (around an inch)
+\usepackage{setspace}  % control line spacing in latex documents
+\usepackage[parfill]{parskip}  % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{amsmath,amssymb}  % latex math
+\usepackage{empheq} % http://www.ctan.org/pkg/empheq
+\usepackage{bm,upgreek}  % allows you to write bold greek letters (upper & lower case)
+
+\usepackage{url}
+
+% allows strikethroughs in math via \cancel{math text goes here}
+\usepackage{cancel}
+
+% for typsetting algorithm pseudocode see http://en.wikibooks.org/wiki/LaTeX/Algorithms_and_Pseudocode
+\usepackage{algorithmic,algorithm}  
+
+\usepackage{graphicx}  % inclusion of graphics; see: http://en.wikibooks.org/wiki/LaTeX/Importing_Graphics
+% allow easy inclusion of .tif, .png graphics
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+%\usepackage{subfigure}  % allows subfigures in figure
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage{xspace}
+\newcommand{\latex}{\LaTeX\xspace}
+
+\usepackage{color}  % http://en.wikibooks.org/wiki/LaTeX/Colors
+
+\long\def\ans#1{{\color{blue}{\em #1}}}
+\long\def\ansnem#1{{\color{blue}#1}}
+\long\def\boldred#1{{\color{red}{\bf #1}}}
+\long\def\boldred#1{\textcolor{red}{\bf #1}}
+\long\def\boldblue#1{\textcolor{blue}{\bf #1}}
+\long\def\todo#1{\textcolor{red}{\bf TODO: #1}}
+
+% Useful package for syntax highlighting of specific code (such as python) -- see below
+\usepackage{listings}  % http://en.wikibooks.org/wiki/LaTeX/Packages/Listings
+\usepackage{textcomp}
+
+%%% The following lines set up using the listings package
+\renewcommand{\lstlistlistingname}{Code Listings}
+\renewcommand{\lstlistingname}{Code Listing}
+
+%%% Specific for python listings
+\definecolor{gray}{gray}{0.5}
+\definecolor{green}{rgb}{0,0.5,0}
+
+\lstnewenvironment{python}[1][]{
+\lstset{
+language=python,
+basicstyle=\footnotesize,  % could also use this -- a little larger \ttfamily\small\setstretch{1},
+stringstyle=\color{red},
+showstringspaces=false,
+alsoletter={1234567890},
+otherkeywords={\ , \}, \{},
+keywordstyle=\color{blue},
+emph={access,and,break,class,continue,def,del,elif ,else,%
+except,exec,finally,for,from,global,if,import,in,i s,%
+lambda,not,or,pass,print,raise,return,try,while},
+emphstyle=\color{black}\bfseries,
+emph={[2]True, False, None, self},
+emphstyle=[2]\color{green},
+emph={[3]from, import, as},
+emphstyle=[3]\color{blue},
+upquote=true,
+morecomment=[s]{"""}{"""},
+commentstyle=\color{gray}\slshape,
+emph={[4]1, 2, 3, 4, 5, 6, 7, 8, 9, 0},
+emphstyle=[4]\color{blue},
+literate=*{:}{{\textcolor{blue}:}}{1}%
+{=}{{\textcolor{blue}=}}{1}%
+{-}{{\textcolor{blue}-}}{1}%
+{+}{{\textcolor{blue}+}}{1}%
+{*}{{\textcolor{blue}*}}{1}%
+{!}{{\textcolor{blue}!}}{1}%
+{(}{{\textcolor{blue}(}}{1}%
+{)}{{\textcolor{blue})}}{1}%
+{[}{{\textcolor{blue}[}}{1}%
+{]}{{\textcolor{blue}]}}{1}%
+{<}{{\textcolor{blue}<}}{1}%
+{>}{{\textcolor{blue}>}}{1},%
+%framexleftmargin=1mm, framextopmargin=1mm, frame=shadowbox, rulesepcolor=\color{blue},#1
+framexleftmargin=1mm, framextopmargin=1mm, frame=single,#1
+}}{}
+%%% End python code listing definitions
+
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\cov}{cov}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%     Begin Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    {\Large {\bf ISTA 421 / INFO 521 -- Final Project OPTION B}} \\
+    \boldred{Due: Friday, December 8, 8pm} \\
+    Total 20\% of final grade \\
+    \vspace{1cm}
+    %{\Large \boldblue{Solutions}}
+\end{center}
+
+%\begin{flushright}
+%STUDENT NAME %% Fill in your name here
+
+%Undergraduate / Graduate %% select which you are!
+%\end{flushright}
+
+\vspace{1cm}
+{\Large {\bf Forward}}
+
+Final Project Option B is a project of your choosing.  
+If you have chosen to do Option B, it is assumed you have already spoken with us (Adarsh and Clay) about your plans.
+If you did not talk with us already, you can still submit the for this option, but you are NOT guaranteed that we will accept full 20\% credit if the project is not deemed substantial enough; if you have not already spoken with us, we recommend that you do Option A.
+
+The final project is due Friday December 8, 8pm.
+
+
+%%%%%%%%%%%%%%%%
+%%%     Problems
+%%%%%%%%%%%%%%%%
+
+\section*{Option B: Project of your choosing}
+
+In this option for the final project, you are proposing your own project that involves any machine learning method, including methods we have not covered in class.  This can include contrasting 2 or more methods.  You will preferably demonstrate the performance of the method(s) on real-world data, but could also use synthetic data if it does a good job demonstrating the strengths and weaknesses of the method(s).  You must include in your project an evaluation of methods that involves appropriate training and testing.  
+
+You will include the following three types of material in your submission:
+\begin{enumerate}
+\item Any data you used to train/test your method. The data in your submission must be open source (no license restrictions). If you are using data that you did not generate or collect yourself, you must clearly specify where it came from and make appropriate attribution / citations. If the data is very large (more than 20MB) and is hosted on a server, you can submit instructions for how to retrieve it; in this case, you should still include in your submission a small portion of the data ($< 20$ MB) on which you can still run your code, so that your submission can be run stand-alone.  If the data you are interested in working with is proprietary, you must talk to us ahead of time -- we will not accept a submission that uses non-open-source data without first talking with us and getting our approval.  (In this case, one option is to create synthetic data similar to your proprietary data and use that for your final submission.) Place any data you include in your submission under the provided {\tt data/} directory in the submission repository.
+One general source of data is the UC Irvine Machine Learning Repository (\url{https://archive.ics.uci.edu/ml/}), and you can also use Google's datasets search: \url{https://datasetsearch.research.google.com/}
+\item Code you used in your project.  All code must be open source.  It {\em is} ok for you to use code written by others as long as it is open source. {\bf All code must be well-documented}.  If you are using code that an individual or research group developed, you MUST ensure it is well-documented; if it is not, you must document it yourself, clearly describing what the component parts do.  You can use larger libraries, like SciKit-Learn -- in this case, you only need to submit your own script and any related files, not the SciKit-Learn library itself. If you have any questions about this, be sure to talk to us before your submission.  In all cases, you should have a ``top-level'' script that you run that will perform training, perform evaluation, and generate summary results. This must also be well-documented and instructions for its use will be included in your report; from these instructions, I must be able to reproduce all of the results you report. As has been the case for all programming assignments in this class, you may also use a large language model (like ChatGPT) but you MUST indicate this and include in your submission the chat transcript along with the code you use, with your own documentation. Failing to do this will be considered cheating. Following the submission instructions: \url{https://ml4ai-2023-fall-ml.github.io/submissions.html} . Place any code you include in your submission under the provided {\tt code/} directory in the submission repository.
+\item A {\bf concise and clear} written report (submitted as pdf). Place any figure/image sources you use in your report under the provided {\tt figures/} directory in the submission repository. The report should follow the same format as a typical conference paper and include the following:
+\begin{enumerate}
+\item The pdf submitted in the Project B repository should be named: {\tt final\_project\_OptionB\_report.pdf}. This should be at the top level of your {\tt final\_project\_Option\_B} repository.
+\item The written report will be single-spaced sentence spacing and around 8 pages (if including many figures, it can be longer, but I want your writing to be {\em clear} and {\em concise}). Include what is needed to clearly communicate that you understand the methods you used, explain what you did, and describe your results.
+\item Most reports will include the following sections (depending on your topic):
+\begin{enumerate}
+\item Introduction: Provide a concise description your project, including what the task is -- what is it that your proposed method(s) is accomplishing. You do not need to include an exhaustive literature review, but should cite relevant sources and demonstrate you understand what the task is. 
+\item Models: Describe the machine learning models/methods (including relevant equations and what they mean, description of the algorithm, etc.) that you are working with in this project. Describe the type of problem the method(s) is designed for. Include citations with summary descriptions of any relevant background material you are deriving this work from. 
+\item Data: Describe the data you are using, including where it came from, what it's structure is, what it represents.
+\item Procedure: Describe the procedure you followed to train your models and generate any results. This should include instructions for how to run your top-level script/code to train, test and generate summary results.
+\item Evaluation: Describe your evaluation method and rationale for its use. Describe all measures/statistics that you use to evaluate your method's performance.
+\item Results: include a clear description of the results of applying your method to the data; include any figures/tables of data summarizing the results.  All plots/tables must have labeled axes and clear, concise and informative captions explaining what the plots/tables represent.
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+\end{document}
