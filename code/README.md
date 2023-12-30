@@ -1,5 +1,0 @@
-### I would like to clarify that *some* of the code I am providing here(mainly in the one titled generate_descriptions) is an extension of a previous project I worked on, which involved Sentiment Analysis of Twitter Data. The part 1 also involes a part of code I derived from another project I'm working on currently. But this addition to the project was something out of scope for me, which I only implemented to experiment with generated data.
-
-### This code is not perfect, I'm fairly new to experimenting with transformers,which is one of the reasons I chose this project topic, to broaden my range and experiment my code with more dynamic datasets. Any suggestions to improve accuracy is highly appreciated.
-
-### Also, initially I created my entire code in a Jupyter notebook(.ipynb file), and it didn't include a top-level script. But after revisiting the updated guidelines in the github repository, I changed my code to include functions as required. I performed a lot of EDA which I could not include in the final code submission with the main script. Sorry for any discrepancies, if there are any.
