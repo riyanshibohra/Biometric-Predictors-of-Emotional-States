@@ -5,7 +5,7 @@ This project explores the fascinating intersection of artificial intelligence an
 ## Project Overview
 
 ### Part 1: Mood State Generation and Classification
-A synthetic dataset is useed to generate mood descriptions using a pre-trained GPT-2 model. These descriptions are then classified into predefined mood states using various deep learning models, including an Ensemble model and a BERT model.
+A synthetic dataset is used to generate mood descriptions using a pre-trained GPT-2 model. These descriptions are then classified into predefined mood states using various deep learning models, including an Ensemble model and a BERT model.
 
 ### Part 2: Stress Level Classification from Real-World Data
 Using real-world data, stress levels are classified into distinct categories. This part of the project involves the application of classification algorithms such as Decision Trees, Random Forest, Logistic Regression, and Gradient Boosting.
