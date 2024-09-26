@@ -44,7 +44,7 @@ The findings highlight the superior performance of the Ensemble model in classif
   - `precision_plot.png`: Precision visualization for synthetic data models.
   - `recall_plot.png`: Recall visualization for synthetic data models.
 
-### `final_project_OptionB_report.pdf`
+### `Report.pdf`
 - A comprehensive report detailing the project's objectives, methodologies, results, and conclusions.
 
 ## Conclusion
