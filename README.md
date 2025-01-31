@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Biometric Predictors of Emotional States: A Deep Learning Approach</h1>
+  <h1>Biometric Predictors of Emotional States</h1>
   <h2>A Deep Learning Approach</h2>
 </div>
 
