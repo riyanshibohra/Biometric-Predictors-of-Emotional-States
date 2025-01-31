@@ -1,6 +1,7 @@
 <p align="center">
+  
+  <h1>Biometric Predictors of Emotional States: A Deep Learning Approach</h1>
   <span style="font-size: 2em;">🧠</span><br>
-  <strong>Biometric Predictors of Emotional States: A Deep Learning Approach</strong>
 </p>
 
 <p align="center">
