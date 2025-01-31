@@ -1,5 +1,6 @@
-<p align="center">
-  <h1>Biometric Predictors of Emotional States: A Deep Learning Approach 🧠</h1>
+<div align="center">
+  <h1>Biometric Predictors of Emotional States: A Deep Learning Approach</h1>
+</div>
 
 <p align="center">
   <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
