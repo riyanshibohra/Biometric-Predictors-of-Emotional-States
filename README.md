@@ -12,9 +12,7 @@
   <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?style=for-the-badge">
 </p>
 
-<p align="center">
-  This project explores the fascinating intersection of artificial intelligence and human emotions. By leveraging wearable technology data, I delve into how biometric indicators can be used to understand and predict emotional states. The project employs advanced machine learning techniques, including deep learning and transformer models, to analyze both synthetic and real-world datasets.
-</p>
+This project explores the fascinating intersection of artificial intelligence and human emotions. By leveraging wearable technology data, I delve into how biometric indicators can be used to understand and predict emotional states. The project employs advanced machine learning techniques, including deep learning and transformer models, to analyze both synthetic and real-world datasets.
 
 ## Project Overview
 
